@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/utils/constants.dart';
 import 'package:flutter_portfolio/view%20model/responsive.dart';
 import 'package:flutter_portfolio/view/intro/components/side_menu_button.dart';
 import 'package:flutter_portfolio/view/main/components/connect_button.dart';
@@ -18,7 +19,7 @@ class TopNavigationBar extends StatelessWidget {
             padding: const EdgeInsets.all(defaultPadding),
             child:!Responsive.isLargeMobile(context)? InkWell(
               onTap: (){
-                launchUrl(Uri.parse('www.linkedin.com/in/huzaifamughal076/'));
+                launchUrl(Uri.parse(AppConstants.linkdinUrl));
               },
               child: Image.asset('assets/images/profile.png')) : MenuButton(onTap: () => Scaffold.of(context).openDrawer(),),
           ),

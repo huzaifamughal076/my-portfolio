@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/utils/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AboutMe extends StatelessWidget {
@@ -186,11 +187,11 @@ class AboutMe extends StatelessWidget {
                         spacing: 16,
                         children: [
                           ElevatedButton(
-                            onPressed: () => _openLink('https://pk.linkedin.com/in/huzaifamughal076'),
+                            onPressed: () => _openLink(AppConstants.linkdinUrl),
                             child: const Text('LinkedIn'),
                           ),
                           OutlinedButton(
-                            onPressed: () => _openLink('mailto:your@email.com'),
+                            onPressed: () => _openLink('mailto:${AppConstants.email}'),
                             child: const Text('Contact Me'),
                           ),
                         ],
