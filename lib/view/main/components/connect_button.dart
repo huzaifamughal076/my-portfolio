@@ -2,6 +2,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../res/constants.dart';
+import '../../../utils/colors.dart';
 
 class ConnectButton extends StatelessWidget {
   const ConnectButton({super.key});
@@ -21,12 +22,12 @@ class ConnectButton extends StatelessWidget {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(defaultPadding),
               gradient: LinearGradient(colors: [
-                Colors.pink,
+                AppColors.primaryColor,
                 Colors.blue.shade900,
               ]),
             boxShadow:const [
               BoxShadow(color: Colors.blue,offset: Offset(0, -1),blurRadius: defaultPadding/4),
-              BoxShadow(color: Colors.red,offset: Offset(0, 1),blurRadius: defaultPadding/4),
+              BoxShadow(color: AppColors.shadowColor,offset: Offset(0, 1),blurRadius: defaultPadding/4),
             ]
           ),
           child: Row(

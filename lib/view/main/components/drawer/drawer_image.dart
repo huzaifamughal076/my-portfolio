@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../res/constants.dart';
+import '../../../../utils/colors.dart';
 
 class DrawerImage extends StatelessWidget {
   const DrawerImage({super.key});
@@ -15,12 +16,12 @@ class DrawerImage extends StatelessWidget {
           borderRadius: BorderRadius.circular(50),
           gradient: LinearGradient(
             colors: [
-              Colors.pink,
+              AppColors.primaryColor,
               Colors.blue.shade900,
             ],
           ),
           boxShadow: const [
-            BoxShadow(color: Colors.pink,blurRadius: 10,offset: Offset(0, 2)),
+            BoxShadow(color: AppColors.primaryColor,blurRadius: 10,offset: Offset(0, 2)),
             BoxShadow(color: Colors.blue,blurRadius: 10,offset: Offset(0, -2)),
           ]
       ),

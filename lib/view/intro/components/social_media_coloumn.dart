@@ -10,8 +10,8 @@ class SocialMediaIconColumn extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SocialMediaIcon(icon: 'assets/icons/linkedin.svg',onTap: ()=>launchUrl(Uri.parse(AppConstants.linkdinUrl))),
-        SocialMediaIcon(icon: 'assets/icons/github.svg',onTap: () => launchUrl(Uri.parse(AppConstants.githubUrl)),),
+        SocialMediaIcon(icon: AppConstants.linkedinIcon,onTap: ()=>launchUrl(Uri.parse(AppConstants.linkdinUrl))),
+        SocialMediaIcon(icon: AppConstants.githubIcon,onTap: () => launchUrl(Uri.parse(AppConstants.githubUrl)),),
       ],
     );
   }

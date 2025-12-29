@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../res/constants.dart';
+import '../../../utils/colors.dart';
 
 class MenuButton extends StatelessWidget {
   final VoidCallback? onTap;
@@ -24,7 +25,7 @@ class MenuButton extends StatelessWidget {
                     color: Colors.black,
                     boxShadow: [
                       BoxShadow(
-                          color: Colors.pinkAccent.withOpacity(.5),
+                          color: AppColors.primaryAccentColor.withOpacity(.5),
                           offset: const Offset(1, 1)),
                       BoxShadow(
                           color: Colors.blue.withOpacity(.5),
@@ -34,7 +35,7 @@ class MenuButton extends StatelessWidget {
                   child: ShaderMask(
                     shaderCallback: (bounds) {
                       return LinearGradient(
-                              colors: [Colors.pink, Colors.blue.shade900])
+                              colors: [AppColors.primaryColor, Colors.blue.shade900])
                           .createShader(bounds);
                     },
                     child: Icon(

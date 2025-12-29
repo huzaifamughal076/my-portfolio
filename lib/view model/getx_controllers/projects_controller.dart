@@ -1,18 +1,14 @@
+import 'package:flutter_portfolio/model/project_model.dart';
 import 'package:get/get.dart';
 
 class ProjectController  extends GetxController{
-  RxList<bool> hovers =[
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-    false,
-  ].obs;
+  RxList<bool> hovers = <bool>[].obs;
 
+@override
+  void onInit() {
+    super.onInit();
+    hovers.assignAll(List.generate(projectList.length, (index) => false));
+  }
 
   onHover(int index,bool value){
     hovers[index]=value;

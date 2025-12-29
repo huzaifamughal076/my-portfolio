@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/utils/colors.dart';
 
 import '../../../res/constants.dart';
 import '../../../view model/responsive.dart';
 
 class AnimatedImageContainer extends StatefulWidget {
-  const AnimatedImageContainer({Key? key, this.height = 300, this.width = 250})
-      : super(key: key);
+  const AnimatedImageContainer({super.key, this.height = 300, this.width = 250});
   final double? width;
   final double? height;
   @override
@@ -42,12 +42,12 @@ class AnimatedImageContainerState extends State<AnimatedImageContainer>
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
               gradient: const LinearGradient(colors: [
-                Colors.pinkAccent,
-                Colors.blue,
+                AppColors.primaryAccentColor,
+                AppColors.secondaryColor,
               ]),
               boxShadow: const [
                 BoxShadow(
-                  color: Colors.pink,
+                  color: AppColors.primaryColor,
                   offset: Offset(-2, 0),
                   blurRadius: 20,
                 ),

@@ -48,7 +48,7 @@ The portfolio website is built using Flutter, a powerful open-source UI software
 To explore and interact with the portfolio website on your local machine, follow these steps:
 
 1. **Clone the Repository:**
-   git clone https://github.com/huzaifamughal076/Flutter-Responsive-Portfolio-WebApp.git
+   git clone https://github.com/huzaifamughal076/my-portfolio
 2. **Install Dependencies:**
    flutter pub get
 3. **Run Application**
@@ -73,7 +73,7 @@ I welcome contributions and suggestions from the community! If you come across a
 Your feedback and thoughts are highly valued. Feel free to connect with me through:
 
 - **Email:** huzaifamughal076@gmail.com
-- **LinkedIn:** [Muhammad Huzaifa](https://www.linkedin.com/in/muhammad-huzaifa-74460720b/)
+- **LinkedIn:** [Muhammad Huzaifa](https://www.linkedin.com/in/huzaifamughal076/)
 
 ## License
 
@@ -81,4 +81,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-### Designed and developed with ❤️ by [Muhammad Huzaifa](https://www.linkedin.com/in/muhammad-huzaifa-74460720b/).
+### Designed and developed with ❤️ by [Muhammad Huzaifa](https://www.linkedin.com/in/huzaifamughal076/).

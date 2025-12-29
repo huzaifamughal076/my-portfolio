@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../utils/colors.dart';
+
+
 class AnimatedSubtitleText extends StatelessWidget {
   final double start;
   final double end;
@@ -19,8 +22,8 @@ class AnimatedSubtitleText extends StatelessWidget {
               color: Colors.white,
               fontWeight: FontWeight.w900,
               shadows: gradient? [
-                const Shadow(color: Colors.pink,offset: Offset(0, 2),blurRadius: 10),
-                const Shadow(color: Colors.pink,offset: Offset(0, -2),blurRadius: 10),
+                const Shadow(color: AppColors.primaryColor,offset: Offset(0, 2),blurRadius: 10),
+                const Shadow(color: AppColors.primaryColor,offset: Offset(0, -2),blurRadius: 10),
               ] :[] ,
               height: 0,
               fontSize: value),
