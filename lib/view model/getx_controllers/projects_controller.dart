@@ -10,7 +10,7 @@ class ProjectController  extends GetxController{
     hovers.assignAll(List.generate(projectList.length, (index) => false));
   }
 
-  onHover(int index,bool value){
+  void onHover(int index,bool value){
     hovers[index]=value;
   }
 }

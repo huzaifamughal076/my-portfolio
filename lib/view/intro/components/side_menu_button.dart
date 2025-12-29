@@ -25,10 +25,10 @@ class MenuButton extends StatelessWidget {
                     color: Colors.black,
                     boxShadow: [
                       BoxShadow(
-                          color: AppColors.primaryAccentColor.withOpacity(.5),
+                          color: AppColors.primaryAccentColor.withValues(alpha: .5),
                           offset: const Offset(1, 1)),
                       BoxShadow(
-                          color: Colors.blue.withOpacity(.5),
+                          color: Colors.blue.withValues(alpha: .5),
                           offset: const Offset(-1, -1)),
                     ]),
                 child:  Center(
