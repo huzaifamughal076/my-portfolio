@@ -1,10 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/firebase_options.dart';
 import 'package:flutter_portfolio/res/constants.dart';
 import 'package:flutter_portfolio/view/splash/splash_view.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() {
+Future<void> main() async {
   runApp(const MyApp());
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+);
 }
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
