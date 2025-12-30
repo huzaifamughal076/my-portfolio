@@ -26,7 +26,7 @@ class MainView extends StatelessWidget {
                 flex: 9,
                 child: PageView(
                   scrollDirection: Axis.vertical,
-                  physics: BouncingScrollPhysics(),
+                  physics: NeverScrollableScrollPhysics(),
                   controller: controller,
                   children: [
                     ...pages
